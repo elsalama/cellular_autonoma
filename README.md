@@ -1,6 +1,6 @@
 ## Cellular Automata Lab
 
-A production-quality, interactive cellular automata (CA) playground built with **Next.js + TypeScript + Tailwind CSS**.
+A interactive cellular automata (CA) playground built with **Next.js + TypeScript + Tailwind CSS**.
 
 Includes deterministic, double-buffered simulation engines for:
 - **Conway’s Game of Life** (Moore neighborhood)
@@ -31,23 +31,6 @@ Open `http://localhost:3000` in your browser.
 - **Pause** to draw on the grid.
 - Use **Seed** + **Copy link** to share reproducible setups.
 
-### URL Parameters (Sharing)
-The playground stores state in the URL query string, including:
-- `rule`: `life | brians_brain | langtons_ant`
-- `seed`: numeric seed (uint32)
-- `w`, `h`: grid dimensions
-- `sps`: steps per second
-- `edge`: `wrap | bounded`
-- `cell`: cell size in pixels
-- `grid`: `1` to show gridlines
-- `sym`: `1` to enable symmetry drawing
-- `preset`: preset id for the rule
-
-### Screenshots
-Add screenshots here once you’ve run the app locally:
-- `docs/screenshots/life.png`
-- `docs/screenshots/brians-brain.png`
-- `docs/screenshots/langtons-ant.png`
 
 ### Notes
 - Simulation state uses **typed arrays** (`Uint8Array`) and **double buffering** (`currentGrid` / `nextGrid`) for correct synchronous updates.
